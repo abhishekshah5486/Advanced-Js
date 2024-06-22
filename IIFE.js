@@ -10,18 +10,25 @@
 // console.log(this.username);
 
 // Named IIFE
-( function chai(){
-    console.log('Database Connected.');
-})();
+// () --> function written inside
+// () --> execution call
+// ( function chai(){
+//     console.log('Database Connected.');
+// })();
 
-( chai => {
-    console.log('Database not Connected.');
-})();
+// ( chai => {
+//     console.log('Database not Connected.');
+// })();
 
 // Anonymous IIFE
-( function() {
-    console.log('Database not Connected.');
-})();
+// ( function() {
+//     console.log('Database not Connected.');
+// })();
+
+// ( () => {
+//     console.log('Database not Connected.');
+// })();
+
 
 ( (name) => {
     console.log(`${name}, database not connected.`);
