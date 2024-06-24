@@ -23,14 +23,30 @@ const myObject = {
     'cgr' : 9.22
 }
 // Objects are not iterable
-let keys = Object.keys(myObject);
+// let keys = Object.keys(myObject);
 // console.log(keys);
 // console.log(myObject.email);
-for (const key of keys) {
+// for (const key of keys) {
+//     console.log(myObject[key]);
+// }
+// let values = Object.values(myObject);
+// for (const val of values) {
+//     console.log(val);
+// }
+
+
+// for (const key in myObject){
+//     console.log(key);
+//     console.log(myObject[key]);
+// }
+
+let keys = Object.getOwnPropertyNames(myObject);
+console.log(keys);
+for (const key of keys){
     console.log(myObject[key]);
 }
-let values = Object.values(myObject);
-for (const val of values) {
-    console.log(val);
-}
 
+let listKeys = Reflect.ownKeys(myObject);
+for (const key of listKeys){
+    console.log(key);
+}
