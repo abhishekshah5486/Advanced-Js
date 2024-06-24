@@ -8,3 +8,13 @@ for(let index=0; index<arr.length; index++){
     }
     console.log(`${arr[index]}, ${index}`);
 }
+
+let colors = ['red', 'blue', 'green'];
+for (const color of colors) {
+    console.log(color);
+}
+
+let str = 'greetings everyone !';
+for (const ch of str){
+    console.log(ch);
+}
