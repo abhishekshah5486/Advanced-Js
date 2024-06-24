@@ -13,3 +13,11 @@ function fn(){
 }
 fn();
 console.log("Line number 2", a);
+
+// var is a function scope, it is only treated differently inside a fn when re declared
+// Expected output
+// Line number 4 undefined
+// Line number 6 21
+// Line number 11 31
+// Line number 12 31
+// Line number 2 10
