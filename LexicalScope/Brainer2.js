@@ -8,7 +8,8 @@ function fxn(){
     gxn();
 }
 fxn();
-
+console.log(a);
 // Expected output 
 // undefined
 // 20
+// a is not defined
